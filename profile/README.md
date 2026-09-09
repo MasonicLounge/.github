@@ -89,45 +89,27 @@ Masonic Lounge — самодостаточный движок интернет-
 
 **EN**
 
-| # | Milestone / Веха | Status / Статус |
-|---|------------------|-----------------|
-| 1 | Planning & project memory | ✅ Done |
-| 2 | Backend skeleton (Go: chi, pgx, goose, config, healthcheck) | ✅ Done |
-| 3 | Backend auth — registration, login, JWT, roles | ✅ Done |
-| 4 | Backend core CRUD — groups → threads → posts | ✅ Done |
-| 5 | Backend S3 — avatars & attachments (MinIO) | ✅ Done |
-| 6 | Backend WebSocket — PMs, notifications, presence | ✅ Done |
-| 7 | Frontend skeleton (Vite + TS + Lit, themes, routing, icons) | ✅ Done |
-| 8 | Frontend public pages — forums, threads, posts, profile | ✅ Done |
-| 9 | Frontend install wizard `/install` | ✅ Done |
-| 10 | Frontend admin panel — groups, users, roles, settings, media | ✅ Done |
-| 11 | Release assembly — docker-compose, env, volumes, healthchecks | ✅ Done |
-| 12 | CI workflows — backend/frontend → ghcr.io | ✅ Done |
-| 13 | Polish — tests, docs, license, dev bootstrap | ✅ Done |
-| 14 | First release — MasonicCore `v0.1.0`, MasonicSkin `v0.1.0` | ✅ Done |
+| Version | Description | Status |
+|---------|-------------|--------|
+| **v0.1.0** | First release — full backend API (auth, CRUD, S3, WebSocket, admin, install wizard), frontend SPA (forum pages, auth, admin panel, themes), Docker Compose assembly, CI/CD to ghcr.io, integration tests | ✅ Shipped |
+| **v0.1.1** | Frontend completeness — WebSocket client (realtime PMs, notifications, presence), i18n with Crowdin, profile editing, reusable component library, pagination UI, frontend tests. Backend: moderation log, S3 config fix | 🔄 In progress |
+| **v0.1.2** | Security & admin — rate limiting, CORS, full-text search, bulk user operations, expanded forum settings, optional email verification | ⬜ Planned |
+| **v0.1.3** | Performance & polish — response caching, DB pooling tuning, OpenAPI docs, structured audit logging, lazy loading, mobile responsive, accessibility | ⬜ Planned |
+| **v1.0.0** | Stable release — full test coverage, deployment guide, API reference, security audit, migration guide | ⬜ Planned |
 
-**Next / Дальше:** push component tags to GitHub → CI publishes images to ghcr.io → announce the project.
+**Next / Дальше:** completing v0.1.1 features → community feedback → v0.1.2 security hardening.
 
 **RU**
 
-| # | Веха | Статус |
-|---|------|--------|
-| 1 | Планирование и память проекта | ✅ Готово |
-| 2 | Скелет бэкенда (Go: chi, pgx, goose, конфиг, healthcheck) | ✅ Готово |
-| 3 | Аутентификация бэкенда — регистрация, логин, JWT, роли | ✅ Готово |
-| 4 | Ключевой CRUD бэкенда — группы → темы → посты | ✅ Готово |
-| 5 | S3 бэкенда — аватарки и вложения (MinIO) | ✅ Готово |
-| 6 | WebSocket бэкенда — ЛС, уведомления, присутствие | ✅ Готово |
-| 7 | Скелет фронтенда (Vite + TS + Lit, темы, роутинг, иконки) | ✅ Готово |
-| 8 | Публичные страницы фронтенда — форумы, темы, посты, профиль | ✅ Готово |
-| 9 | Мастер установки фронтенда `/install` | ✅ Готово |
-| 10 | Админка фронтенда — группы, пользователи, роли, настройки, медиа | ✅ Готово |
-| 11 | Сборочный релиз — docker-compose, env, volumes, healthchecks | ✅ Готово |
-| 12 | CI-пайплайны — backend/frontend → ghcr.io | ✅ Готово |
-| 13 | Полировка — тесты, доки, лицензия, dev-запуск | ✅ Готово |
-| 14 | Первый релиз — MasonicCore `v0.1.0`, MasonicSkin `v0.1.0` | ✅ Готово |
+| Версия | Описание | Статус |
+|--------|----------|--------|
+| **v0.1.0** | Первый релиз — полный бэкенд API (auth, CRUD, S3, WebSocket, admin, установка), фронтенд SPA (страницы форума, авторизация, админка, темы), сборка Docker Compose, CI/CD в ghcr.io, интеграционные тесты | ✅ Выпущен |
+| **v0.1.1** | Завершение фронтенда — WebSocket клиент (PM, уведомления, presence), i18n с Crowdin, редактирование профиля, библиотека компонентов, пагинация, тесты фронтенда. Бэкенд: лог модерации, исправление S3 конфига | 🔄 В процессе |
+| **v0.1.2** | Безопасность и админка — rate limiting, CORS, полнотекстовый поиск, массовые операции с пользователями, расширенные настройки, опциональная верификация email | ⬜ Запланировано |
+| **v0.1.3** | Производительность и полировка — кэширование ответов, тюнинг пула соединений, OpenAPI доки, аудит лог, ленивая загрузка, мобильная адаптация, доступность | ⬜ Запланировано |
+| **v1.0.0** | Стабильный релиз — полное покрытие тестами, гайд по деплою, справочник API, аудит безопасности, гайд миграции | ⬜ Запланировано |
 
-**Дальше:** пуш тегов компонентов на GitHub → CI публикует образы в ghcr.io → анонс проекта.
+**Дальше:** завершение v0.1.1 → обратная связь от сообщества → v0.1.2 укрепление безопасности.
 
 ---
 
