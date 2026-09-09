@@ -22,6 +22,8 @@ Masonic Lounge is a self-hostable, open-source engine for creating internet foru
 **RU**
 Masonic Lounge — самодостаточный движок интернет-форумов с открытым исходным кодом. Поставляется как стек Docker Compose: Go API, фронтенд на Lit.js, PostgreSQL 16 и хранилище MinIO (S3). Включает мастер установки, веб-админку, независимое версионирование компонентов, автоматические миграции БД и чистый настраиваемый интерфейс.
 
+**Latest release / Последний релиз:** `release-0.1.0-0.1.0` (MasonicCore `v0.1.0` + MasonicSkin `v0.1.0`)
+
 ---
 
 ## Features / Возможности
@@ -90,52 +92,62 @@ Masonic Lounge — самодостаточный движок интернет-
 | # | Milestone / Веха | Status / Статус |
 |---|------------------|-----------------|
 | 1 | Planning & project memory | ✅ Done |
-| 2 | Backend skeleton (Go: chi, pgx, goose, config, healthcheck) | ⬜ Next |
-| 3 | Backend auth — registration, login, JWT, roles | ⬜ |
-| 4 | Backend core CRUD — groups → threads → posts | ⬜ |
-| 5 | Backend S3 — avatars & attachments (MinIO) | ⬜ |
-| 6 | Backend WebSocket — PMs, notifications, presence | ⬜ |
-| 7 | Frontend skeleton (Vite + TS + Lit, themes, routing, icons) | ⬜ |
-| 8 | Frontend public pages — forums, threads, posts, profile | ⬜ |
-| 9 | Frontend install wizard `/install` | ⬜ |
-| 10 | Frontend admin panel — groups, users, roles, settings, media | ⬜ |
-| 11 | Release assembly — docker-compose, env, volumes, healthchecks | ⬜ |
-| 12 | CI workflows — backend/frontend → ghcr.io | ⬜ |
-| 13 | Polish — tests, docs, license, dev bootstrap | ⬜ |
+| 2 | Backend skeleton (Go: chi, pgx, goose, config, healthcheck) | ✅ Done |
+| 3 | Backend auth — registration, login, JWT, roles | ✅ Done |
+| 4 | Backend core CRUD — groups → threads → posts | ✅ Done |
+| 5 | Backend S3 — avatars & attachments (MinIO) | ✅ Done |
+| 6 | Backend WebSocket — PMs, notifications, presence | ✅ Done |
+| 7 | Frontend skeleton (Vite + TS + Lit, themes, routing, icons) | ✅ Done |
+| 8 | Frontend public pages — forums, threads, posts, profile | ✅ Done |
+| 9 | Frontend install wizard `/install` | ✅ Done |
+| 10 | Frontend admin panel — groups, users, roles, settings, media | ✅ Done |
+| 11 | Release assembly — docker-compose, env, volumes, healthchecks | ✅ Done |
+| 12 | CI workflows — backend/frontend → ghcr.io | ✅ Done |
+| 13 | Polish — tests, docs, license, dev bootstrap | ✅ Done |
+| 14 | First release — MasonicCore `v0.1.0`, MasonicSkin `v0.1.0` | ✅ Done |
+
+**Next / Дальше:** push component tags to GitHub → CI publishes images to ghcr.io → announce the project.
 
 **RU**
 
 | # | Веха | Статус |
 |---|------|--------|
 | 1 | Планирование и память проекта | ✅ Готово |
-| 2 | Скелет бэкенда (Go: chi, pgx, goose, конфиг, healthcheck) | ⬜ Следующий |
-| 3 | Аутентификация бэкенда — регистрация, логин, JWT, роли | ⬜ |
-| 4 | Ключевой CRUD бэкенда — группы → темы → посты | ⬜ |
-| 5 | S3 бэкенда — аватарки и вложения (MinIO) | ⬜ |
-| 6 | WebSocket бэкенда — ЛС, уведомления, присутствие | ⬜ |
-| 7 | Скелет фронтенда (Vite + TS + Lit, темы, роутинг, иконки) | ⬜ |
-| 8 | Публичные страницы фронтенда — форумы, темы, посты, профиль | ⬜ |
-| 9 | Мастер установки фронтенда `/install` | ⬜ |
-| 10 | Админка фронтенда — группы, пользователи, роли, настройки, медиа | ⬜ |
-| 11 | Сборочный релиз — docker-compose, env, volumes, healthchecks | ⬜ |
-| 12 | CI-пайплайны — backend/frontend → ghcr.io | ⬜ |
-| 13 | Полировка — тесты, доки, лицензия, dev-запуск | ⬜ |
+| 2 | Скелет бэкенда (Go: chi, pgx, goose, конфиг, healthcheck) | ✅ Готово |
+| 3 | Аутентификация бэкенда — регистрация, логин, JWT, роли | ✅ Готово |
+| 4 | Ключевой CRUD бэкенда — группы → темы → посты | ✅ Готово |
+| 5 | S3 бэкенда — аватарки и вложения (MinIO) | ✅ Готово |
+| 6 | WebSocket бэкенда — ЛС, уведомления, присутствие | ✅ Готово |
+| 7 | Скелет фронтенда (Vite + TS + Lit, темы, роутинг, иконки) | ✅ Готово |
+| 8 | Публичные страницы фронтенда — форумы, темы, посты, профиль | ✅ Готово |
+| 9 | Мастер установки фронтенда `/install` | ✅ Готово |
+| 10 | Админка фронтенда — группы, пользователи, роли, настройки, медиа | ✅ Готово |
+| 11 | Сборочный релиз — docker-compose, env, volumes, healthchecks | ✅ Готово |
+| 12 | CI-пайплайны — backend/frontend → ghcr.io | ✅ Готово |
+| 13 | Полировка — тесты, доки, лицензия, dev-запуск | ✅ Готово |
+| 14 | Первый релиз — MasonicCore `v0.1.0`, MasonicSkin `v0.1.0` | ✅ Готово |
+
+**Дальше:** пуш тегов компонентов на GitHub → CI публикует образы в ghcr.io → анонс проекта.
 
 ---
 
 ## Commit Activity / Активность коммитов
 
 **EN**
-Live organization activity timeline (repos created over time, powered by GitHub API via github-profile-summary-cards). Renders once the GitHub organization exists.
+Live organization activity timeline (powered by GitHub API via github-profile-summary-cards).
 
 **RU**
-Живой таймлайн активности организации (создание репозиториев с течением времени, на основе GitHub API через github-profile-summary-cards). Отобразится после создания организации на GitHub.
+Живой таймлайн активности организации (на основе GitHub API через github-profile-summary-cards).
 
 [![Organization activity](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=masoniclounge&type=organization)](https://github.com/masoniclounge)
 
 ---
 
 ## Contributors / Контрибьюторы
+
+[![Contributors MasonicCore](https://img.shields.io/github/contributors/masoniclounge/MasonicCore)](https://github.com/masoniclounge/MasonicCore/graphs/contributors)
+[![Contributors MasonicSkin](https://img.shields.io/github/contributors/masoniclounge/MasonicSkin)](https://github.com/masoniclounge/MasonicSkin/graphs/contributors)
+[![Contributors release](https://img.shields.io/github/contributors/masoniclounge/release)](https://github.com/masoniclounge/release/graphs/contributors)
 
 **EN**
 Interested in contributing? Open an issue in the relevant repository or submit a pull request. Every change follows the project's conventions (bilingual changelog, per-repo commits, explicit SQL, no ORM).
@@ -148,7 +160,7 @@ Interested in contributing? Open an issue in the relevant repository or submit a
 ## License / Лицензия
 
 **EN**
-GPL v3.0 — copyleft license. All derivative works and distributions must be released under the same license. License text will be published in each repository once initialized.
+GPL v3.0 — copyleft license. All derivative works and distributions must be released under the same license. The `LICENSE` file is published in each repository (MasonicCore, MasonicSkin, release).
 
 **RU**
-GPL v3.0 — лицензия с копилефтом. Все производные работы и распространения должны публиковаться под той же лицензией. Текст лицензии будет опубликован в каждом репозитории после их инициализации.
+GPL v3.0 — лицензия с копилефтом. Все производные работы и распространения должны публиковаться под той же лицензией. Файл `LICENSE` опубликован в каждом репозитории (MasonicCore, MasonicSkin, release).
