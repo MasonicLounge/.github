@@ -70,14 +70,14 @@ Masonic Lounge — самодостаточный движок интернет-
 ## Repositories / Репозитории
 
 **EN**
-- [`masoniclounge/backend`](https://github.com/masoniclounge/backend) — Go REST API
-- [`masoniclounge/frontend`](https://github.com/masoniclounge/frontend) — Lit.js application
+- [`masoniclounge/MasonicCore`](https://github.com/masoniclounge/MasonicCore) — Go REST API
+- [`masoniclounge/MasonicSkin`](https://github.com/masoniclounge/MasonicSkin) — Lit.js application
 - [`masoniclounge/release`](https://github.com/masoniclounge/release) — Docker Compose release assembly (pulls tagged images from ghcr.io)
 - This profile repository — organization overview
 
 **RU**
-- [`masoniclounge/backend`](https://github.com/masoniclounge/backend) — Go REST API
-- [`masoniclounge/frontend`](https://github.com/masoniclounge/frontend) — приложение на Lit.js
+- [`masoniclounge/MasonicCore`](https://github.com/masoniclounge/MasonicCore) — Go REST API
+- [`masoniclounge/MasonicSkin`](https://github.com/masoniclounge/MasonicSkin) — приложение на Lit.js
 - [`masoniclounge/release`](https://github.com/masoniclounge/release) — сборочный Docker Compose релиз (подтягивает тегированные образы из ghcr.io)
 - Этот репозиторий профиля — обзор организации
 
