@@ -126,14 +126,12 @@ Masonic Lounge — самодостаточный движок интернет-
 ## Commit Activity / Активность коммитов
 
 **EN**
-Live commit & contribution activity for the organization (powered by GitHub API):
+Live organization activity timeline (repos created over time, powered by GitHub API via github-profile-summary-cards). Renders once the GitHub organization exists.
 
 **RU**
-Активность коммитов и вклад в организацию в реальном времени (на основе GitHub API):
+Живой таймлайн активности организации (создание репозиториев с течением времени, на основе GitHub API через github-profile-summary-cards). Отобразится после создания организации на GitHub.
 
-[![GitHub activity graph](https://github-readme-activity-graph.cyclic.app/graph?username=masoniclounge&theme=react&hide_border=true&area=true)](https://github.com/masoniclounge)
-
-[![GitHub contributions](https://ghchart.rshah.org/masoniclounge)](https://github.com/masoniclounge)
+[![Organization activity](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=masoniclounge&type=organization)](https://github.com/masoniclounge)
 
 ---
 
